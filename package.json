@@ -1,0 +1,21 @@
+{
+  "name": "rent-a-movie",
+  "version": "1.0.0",
+  "description": "Rent a Movie",
+  "main": "rent-a-movie-server.js",
+  "dependencies": {
+    "json-server": "^0.15.0"
+  },
+  "devDependencies": {
+    "json-server-auth": "^1.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node rent-a-movie-server.js"
+  },
+  "keywords": [
+    "rent-a-movie"
+  ],
+  "author": "Eduardo Cerqueira",
+  "license": "ISC"
+}

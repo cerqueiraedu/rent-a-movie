@@ -1,0 +1,41 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Eduardo Cerqueira",
+      "email": "eduardo.cerqueira@no-mail.com"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": 2,
+      "title": "Polar",
+      "genre": "Action"
+    },
+    {
+      "id": 3,
+      "title": "Shutter Island",
+      "genre": "Thriller"
+    }
+  ],
+  "rentals": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "movieId": 1,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "customerId": 1,
+      "movieId": 2,
+      "rating": 5
+    }
+  ],
+  "users": [  ]
+}
