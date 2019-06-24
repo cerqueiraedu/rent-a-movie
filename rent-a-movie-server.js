@@ -9,7 +9,8 @@ server.db = router.db;
 
 const rules = auth.rewriter({
   // Permission rules
-  rentals: 660
+  rentals: 660,
+  customers: 660
 })
 
 server.use(middlewares);

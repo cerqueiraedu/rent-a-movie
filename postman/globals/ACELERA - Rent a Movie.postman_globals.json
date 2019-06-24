@@ -1,0 +1,24 @@
+{
+	"id": "8781fa09-1983-496f-895c-36ea23cd0962",
+	"values": [
+		{
+			"key": "userEmail",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "userPassword",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "accessToken",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"name": "ACELERA - Rent a Movie Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2019-06-24T19:25:12.701Z",
+	"_postman_exported_using": "Postman/7.2.2"
+}
