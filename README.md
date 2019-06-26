@@ -2,7 +2,15 @@
 
 ## Getting started
 
-Install [Node.js](https://nodejs.org/en/)
+Install [Node.js](https://nodejs.org/en/download/)
+
+Install [Postman](https://www.getpostman.com/downloads/)
+
+Clone the the repository locally:
+
+```bash
+$ git clone https://github.com/cerqueiraedu/rent-a-movie.git
+```
 
 Download package dependencies:
 
@@ -24,23 +32,23 @@ $ npm start
 
 ## Resources
 
-### Authentication:
+### Authentication
 
-[register](http://localhost:3000/register)
+[POST /register](http://localhost:3000/register)
 
-[login](http://localhost:3000/login)
+[POST /login](http://localhost:3000/login)
 
-### Protected Resources:
+### Protected Resources
 
-[/customers](http://localhost:3000/customers)
+[GET /customers](http://localhost:3000/customers)
 
-[/rentals](http://localhost:3000/rentals)
+[GET /rentals](http://localhost:3000/rentals)
 
-[/users](http://localhost:3000/users)
+[GET /users](http://localhost:3000/users)
 
 ### Common Resources
 
-[/movies](http://localhost:3000/movies)
+[GET /movies](http://localhost:3000/movies)
 
 You can use `_expand` and `_embed` to include children/parent [relationships](https://github.com/typicode/json-server#relationships):
 
@@ -53,7 +61,13 @@ GET     /rentals?customerId=1&_expand=movie
 
 ## Postman
 
-You can find test examples on [official Postman website](https://learning.getpostman.com/docs/postman/scripts/test_examples/)
+You can find test examples on [official Postman website](https://learning.getpostman.com/docs/postman/scripts/test_examples/).
+
+### Importing Collections
+
+Access Postman Home screen: File > Import and select the `test-suites` folder to import the collections and variables. 
+
+The `test-suites` folder contains:
 
 `collections` folder contains all defined requests for a test run.
 
@@ -61,4 +75,8 @@ You can find test examples on [official Postman website](https://learning.getpos
 
 `globals` folder contains all global variables that might be shared across environments.
 
-`test-runs` folder contains all the collections' test run results.
+### Importing Test Runs
+
+Access Postman Runner screen and click on `Import Test Run`:
+
+Import `test-runs` folder, that contains all the collections' test run results (i.e. our evidences).
