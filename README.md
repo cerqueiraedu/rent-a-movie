@@ -3,7 +3,13 @@
 ## Table of contents
 - [Getting started](#getting-started)
 - [Getting started with Postman](#getting-started-with-postman)
+  * [Importing Collections](#importing-collections)
+  * [Importing Test Runs](#importing-test-runs)
 - [Resources](#resources)
+  * [Allowed Verbs](#allowed-verbs)
+  * [Authentication](#authentication)
+  * [Protected Resources](#protected-resources)
+  * [Common Resources](#common-resources)
 
 ## Getting started
 
