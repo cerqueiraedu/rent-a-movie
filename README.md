@@ -5,7 +5,7 @@
 - [Getting started with Postman](#getting-started-with-postman)
   * [Importing Collections](#importing-collections)
   * [Importing Test Runs](#importing-test-runs)
-- [Resources](#resources)
+- [API Resources](#api-resources)
   * [Allowed Verbs](#allowed-verbs)
   * [Authentication](#authentication)
   * [Protected Resources](#protected-resources)
@@ -63,7 +63,7 @@ The `test-suites` folder contains:
 * Access Postman Runner screen and click on `Import Test Run`:
   - Import `test-runs` folder, that contains all the collections' test run results (i.e. evidences).
 
-## Resources
+## API Resources
 
 ### Allowed Verbs
 
