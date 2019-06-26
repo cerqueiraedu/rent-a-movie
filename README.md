@@ -71,7 +71,7 @@ You can make GET, POST, PUT, PATCH or DELETE requests. Changes will be automatic
 
 ### Authentication
 
-[POST /register](http://localhost:3000/register) - registers a new `user` and returns a new token
+[POST /register](http://localhost:3000/register) - registers a new `user` and returns a new token:
 
 ```json
 {
@@ -81,7 +81,7 @@ You can make GET, POST, PUT, PATCH or DELETE requests. Changes will be automatic
 ```
 
 
-[POST /login](http://localhost:3000/login) - validates a `user` and returns a new token, if credentials are valid
+[POST /login](http://localhost:3000/login) - validates a `user` and returns a new token, if credentials are valid:
 
 ```json
 {
@@ -95,7 +95,7 @@ You can make GET, POST, PUT, PATCH or DELETE requests. Changes will be automatic
 
 You will need to provide a valid token and supply it using the `Bearer Token` authorization header to have access to protected resources.
 
-[GET /customers](http://localhost:3000/customers) - returns all customers that can rent a movie
+[GET /customers](http://localhost:3000/customers) - returns all customers that can rent a movie:
 
 ```json
 {
@@ -105,7 +105,7 @@ You will need to provide a valid token and supply it using the `Bearer Token` au
 }
 ```
 
-[GET /rentals](http://localhost:3000/rentals) - returns all rentals
+[GET /rentals](http://localhost:3000/rentals) - returns all rentals:
 
 ```json
 {
@@ -116,7 +116,7 @@ You will need to provide a valid token and supply it using the `Bearer Token` au
 }
 ```
 
-[GET /users](http://localhost:3000/users) - returns every user allowed to access the app (__authentication purposes__)
+[GET /users](http://localhost:3000/users) - returns every user allowed to access the app (__authentication purposes__):
 
 ```json
 {
@@ -129,7 +129,7 @@ You will need to provide a valid token and supply it using the `Bearer Token` au
 
 ### Common Resources
 
-[GET /movies](http://localhost:3000/movies) - returns all movies currently available
+[GET /movies](http://localhost:3000/movies) - returns all movies currently available:
 
 ```json
 {
