@@ -41,11 +41,11 @@ You can find test examples on [official Postman website](https://learning.getpos
 
 The `test-suites` folder contains:
 
-`collections` folder contains all defined requests for a test run.
+* `collections` folder contains all defined requests for a test run.
 
-`environments` folder contains all environment variables.
+* `environments` folder contains all environment variables.
 
-`globals` folder contains all global variables that might be shared across environments.
+* `globals` folder contains all global variables that might be shared across environments.
 
 ### Importing Test Runs
 
@@ -53,6 +53,10 @@ The `test-suites` folder contains:
   - Import `test-runs` folder, that contains all the collections' test run results (i.e. evidences).
 
 ## Resources
+
+### Allowed Verbs
+
+You can make GET, POST, PUT, PATCH or DELETE requests. Changes will be automatically and safely saved to `db.json`.
 
 ### Authentication
 
@@ -114,7 +118,7 @@ You will need to provide a valid token and supply it using the `Bearer Token` au
 
 ### Common Resources
 
-[GET /movies](http://localhost:3000/movies)
+[GET /movies](http://localhost:3000/movies) - returns all movies currently available
 
 ```json
 {
