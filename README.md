@@ -7,9 +7,9 @@
   * [Importing Test Runs](#importing-test-runs)
 - [API Resources](#api-resources)
   * [Allowed Verbs](#allowed-verbs)
+  * [Common Resources](#common-resources)
   * [Authentication](#authentication)
   * [Protected Resources](#protected-resources)
-  * [Common Resources](#common-resources)
 
 ## Getting started
 
@@ -69,6 +69,20 @@ The `test-suites` folder contains:
 
 You can make GET, POST, PUT, PATCH or DELETE requests. Changes will be automatically and safely saved to `db.json`.
 
+
+### Common Resources
+
+[GET /movies](http://localhost:3000/movies) - returns all movies currently available:
+
+```json
+{
+  "id": 1,
+  "title": "Inception",
+  "genre": "Sci-Fi"
+}
+```
+
+
 ### Authentication
 
 [POST /register](http://localhost:3000/register) - registers a new `user` and returns a new token:
@@ -123,19 +137,6 @@ You will need to provide a valid token and supply it using the `Bearer Token` au
   "id": 1
   "email": "user@no-mail.com"
   "password": "YourPassword"
-}
-```
-
-
-### Common Resources
-
-[GET /movies](http://localhost:3000/movies) - returns all movies currently available:
-
-```json
-{
-  "id": 1,
-  "title": "Inception",
-  "genre": "Sci-Fi"
 }
 ```
 
