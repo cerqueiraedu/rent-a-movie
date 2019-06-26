@@ -24,10 +24,23 @@ $ npm start
 
 ## Resources
 
-[/customers](localhost:3000/customers)
-[/movies](localhost:3000/movies)
-[/rentals](localhost:3000/rentals)
-[/users](localhost:3000/users)
+### Authentication:
+
+[register](http://localhost:3000/register)
+
+[login](http://localhost:3000/login)
+
+### Protected Resources:
+
+[/customers](http://localhost:3000/customers)
+
+[/rentals](http://localhost:3000/rentals)
+
+[/users](http://localhost:3000/users)
+
+### Common Resources
+
+[/movies](http://localhost:3000/movies)
 
 You can use `_expand` and `_embed` to include children/parent [relationships](https://github.com/typicode/json-server#relationships):
 

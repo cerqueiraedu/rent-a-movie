@@ -37,11 +37,5 @@
       "rating": 5
     }
   ],
-  "users": [
-    {
-      "email": "eduardo.cerqueira@no-mail.com",
-      "password": "$2a$10$rltocS/g/cKZsSAjR1gykuCTqO3.gwBtRxaD.ymI7SHUZe2aFKMre",
-      "id": 1
-    }
-  ]
+  "users": []
 }
