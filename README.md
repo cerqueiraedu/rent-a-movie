@@ -116,7 +116,7 @@ You will need to provide a valid token and supply it using the `Bearer Token` au
 }
 ```
 
-[GET /users](http://localhost:3000/users) - returns every user allowed to access the app (authentication purposes)
+[GET /users](http://localhost:3000/users) - returns every user allowed to access the app (__authentication purposes__)
 
 ```json
 {
