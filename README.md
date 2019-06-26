@@ -1,5 +1,10 @@
 # Rent a Movie
 
+## Table of contents
+- [Getting started](#getting-started)
+- [Getting started with Postman](#getting-started-with-postman)
+- [Resources](#resources)
+
 ## Getting started
 
 * Install [Node.js](https://nodejs.org/en/download/)
