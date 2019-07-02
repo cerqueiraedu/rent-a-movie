@@ -151,6 +151,23 @@
 		},
 		{
 			"name": "Get Movie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "49159b3c-1c48-4cea-98ba-2eb7287a5f5e",
+						"exec": [
+							"var expectedTitle = \"Fight Club\";",
+							"",
+							"pm.test(\"Movie Title is Equal to \" + expectedTitle, function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.title).to.eql(expectedTitle);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},

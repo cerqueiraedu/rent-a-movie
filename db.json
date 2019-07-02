@@ -21,6 +21,11 @@
       "id": 3,
       "title": "Shutter Island",
       "genre": "Thriller"
+    },
+    {
+      "id": 4,
+      "title": "Fight Club",
+      "genre": "Drma"
     }
   ],
   "rentals": [
