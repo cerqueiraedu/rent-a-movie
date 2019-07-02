@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="End to End Tests" tests="5" time="0.191">
+  <testsuite name="Authentication / Protected Resources / Get Customers" id="1fa799ff-0dbb-499d-af5d-009268e2ce48" timestamp="2019-07-02T12:22:12.820Z" tests="1" failures="0" errors="0" time="0.074">
+    <testcase name="Status Code is 401" time="0.074" classname="EndToEndTests"/>
+  </testsuite>
+  <testsuite name="Authentication / Protected Resources / Get Rentals" id="8f7d467c-5765-44f0-9c7e-1179c4db0d43" timestamp="2019-07-02T12:22:12.820Z" tests="1" failures="0" errors="0" time="0.007">
+    <testcase name="Status Code is 401" time="0.007" classname="EndToEndTests"/>
+  </testsuite>
+  <testsuite name="Authentication / Insert User Credential" id="d03f7072-2215-402a-9981-ce4cd4cbfedf" timestamp="2019-07-02T12:22:12.820Z" tests="2" failures="0" errors="0" time="0.088">
+    <testcase name="Status Code is 201" time="0.088" classname="EndToEndTests"/>
+    <testcase name="Contains a valid Access Token" time="0.088" classname="EndToEndTests"/>
+  </testsuite>
+  <testsuite name="Customers / Get Customers" id="5993eea3-1891-4d71-ac0d-5cbe2fe44167" timestamp="2019-07-02T12:22:12.820Z" tests="1" failures="0" errors="0" time="0.011">
+    <testcase name="Status Code is 200" time="0.011" classname="EndToEndTests"/>
+  </testsuite>
+  <testsuite name="Tear Down / Delete User Credential" id="4b31a132-48a5-487b-86e7-215671538e55" timestamp="2019-07-02T12:22:12.820Z" tests="1" failures="0" errors="0" time="0.011">
+    <testcase name="Status Code is 200" time="0.011" classname="EndToEndTests"/>
+  </testsuite>
+</testsuites>

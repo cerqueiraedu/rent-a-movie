@@ -3,12 +3,12 @@
 	"values": [
 		{
 			"key": "userEmail",
-			"value": "",
+			"value": "eduardo.cerqueira@no-mail.com",
 			"enabled": true
 		},
 		{
 			"key": "userPassword",
-			"value": "",
+			"value": "shallpass",
 			"enabled": true
 		},
 		{
@@ -19,6 +19,6 @@
 	],
 	"name": "ACELERA - Rent a Movie Globals",
 	"_postman_variable_scope": "globals",
-	"_postman_exported_at": "2019-06-24T19:25:12.701Z",
+	"_postman_exported_at": "2019-06-30T22:54:07.250Z",
 	"_postman_exported_using": "Postman/7.2.2"
 }
