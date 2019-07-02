@@ -61,7 +61,7 @@
 			"response": []
 		},
 		{
-			"name": "Insert Movie",
+			"name": "Insert Movie with mispelled Genre and Title",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -90,20 +90,20 @@
 			"response": []
 		},
 		{
-			"name": "Edit Movie",
+			"name": "Edit Movie and fix Genre",
 			"request": {
 				"method": "PUT",
 				"header": [
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
+						"type": "text",
+						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": 4,\n    \"title\": \"Club Fight\",\n    \"genre\": \"Drama\"\n}"
+					"raw": "{\n    \"id\": 4,\n    \"title\": \"Club Fight 2\",\n    \"genre\": \"Drama\"\n}"
 				},
 				"url": {
 					"raw": "{{protocol}}://{{hostname}}/movies/4",
@@ -158,10 +158,16 @@
 						"id": "49159b3c-1c48-4cea-98ba-2eb7287a5f5e",
 						"exec": [
 							"var expectedTitle = \"Fight Club\";",
+							"var expectedGenre = \"Drama\";",
 							"",
 							"pm.test(\"Movie Title is Equal to \" + expectedTitle, function () {",
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.title).to.eql(expectedTitle);",
+							"});",
+							"",
+							"pm.test(\"Movie Genre is Equal to \" + expectedGenre, function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.genre).to.eql(expectedGenre);",
 							"});"
 						],
 						"type": "text/javascript"
