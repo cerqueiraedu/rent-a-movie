@@ -1,0 +1,353 @@
+{
+	"id": "30a8372e-131b-4034-a9a5-2e2969bece54",
+	"name": "Movies Management",
+	"allTests": [],
+	"timestamp": "2019-07-02T15:41:53.765Z",
+	"collection_id": "87a70702-176d-4dad-9845-6ddbb5e024b6",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "c7b6f144-6ebc-4f58-9eca-e81123133147",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "87a70702-176d-4dad-9845-6ddbb5e024b6",
+		"name": "Movies Management",
+		"description": "",
+		"auth": null,
+		"events": null,
+		"variables": [],
+		"order": [
+			"b8541dbc-1161-4c0d-a300-2262319faa3e",
+			"44c047ec-544c-46d6-9102-63e8bd27de83",
+			"0a09ad63-4bd4-471d-b7cd-ca4932e7062c",
+			"431711ce-9136-422e-9ad5-725e844c0e43",
+			"0096e35c-a643-4e81-8afd-10f1076c589c",
+			"f62616e7-f7f5-4b0c-a690-097a82d10edb"
+		],
+		"folders_order": [],
+		"owner": "6974813",
+		"favorite": false,
+		"isFavorite": true
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "userEmail",
+			"value": "eduardo.cerqueira@no-mail.com",
+			"enabled": true
+		},
+		{
+			"key": "userPassword",
+			"value": "shallpass",
+			"enabled": true
+		},
+		{
+			"key": "accessToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVkdWFyZG8uY2VycXVlaXJhQG5vLW1haWwuY29tIiwiaWF0IjoxNTYyMDgxNTIwLCJleHAiOjE1NjIwODUxMjAsInN1YiI6IjEifQ.FI5k4B4xC4Ao8gxo7TFwt0tyMUvKS3UP7ABFZJcbwzk",
+			"enabled": true
+		}
+	],
+	"results": [
+		{
+			"name": "Get Movies",
+			"id": "b8541dbc-1161-4c0d-a300-2262319faa3e",
+			"url": "http://localhost:3000/movies",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status Code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"13"
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true
+				}
+			],
+			"time": "13",
+			"totalRequestTime": "13",
+			"iterationResults": {}
+		},
+		{
+			"name": "Insert Movie with mispelled Genre and Title",
+			"id": "44c047ec-544c-46d6-9102-63e8bd27de83",
+			"url": "http://localhost:3000/movies",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"30"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "30",
+			"totalRequestTime": "30",
+			"iterationResults": {}
+		},
+		{
+			"name": "Edit Movie and fix Genre",
+			"id": "0a09ad63-4bd4-471d-b7cd-ca4932e7062c",
+			"url": "http://localhost:3000/movies/4",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"14"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "14",
+			"totalRequestTime": "14",
+			"iterationResults": {}
+		},
+		{
+			"name": "Edit Movie Title",
+			"id": "431711ce-9136-422e-9ad5-725e844c0e43",
+			"url": "http://localhost:3000/movies/4",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"16"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "16",
+			"totalRequestTime": "16",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get Movie",
+			"id": "0096e35c-a643-4e81-8afd-10f1076c589c",
+			"url": "http://localhost:3000/movies/4",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Movie Title is Equal to Fight Club": true,
+				"Movie Genre is Equal to Drama": true
+			},
+			"testPassFailCounts": {
+				"Movie Title is Equal to Fight Club": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Movie Genre is Equal to Drama": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"7"
+			],
+			"allTests": [
+				{
+					"Movie Title is Equal to Fight Club": true,
+					"Movie Genre is Equal to Drama": true
+				}
+			],
+			"time": "7",
+			"totalRequestTime": "7",
+			"iterationResults": {}
+		},
+		{
+			"name": "Delete Movie",
+			"id": "f62616e7-f7f5-4b0c-a690-097a82d10edb",
+			"url": "http://localhost:3000/movies/4",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status Code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"11"
+			],
+			"allTests": [
+				{
+					"Status Code is 200": true
+				}
+			],
+			"time": "11",
+			"totalRequestTime": "11",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 4,
+	"totalFail": 0,
+	"totalTime": 91,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Get Movies",
+			"id": "b8541dbc-1161-4c0d-a300-2262319faa3e",
+			"url": "http://localhost:3000/movies",
+			"time": "2019-07-02T15:41:53.765Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Insert Movie with mispelled Genre and Title",
+			"id": "44c047ec-544c-46d6-9102-63e8bd27de83",
+			"url": "http://localhost:3000/movies",
+			"time": "2019-07-02T15:41:53.765Z",
+			"responseCode": {
+				"code": 201,
+				"name": "Created",
+				"detail": {
+					"name": "Created",
+					"detail": "The request has been fulfilled and resulted in a new resource being created."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Edit Movie and fix Genre",
+			"id": "0a09ad63-4bd4-471d-b7cd-ca4932e7062c",
+			"url": "http://localhost:3000/movies/4",
+			"time": "2019-07-02T15:41:53.765Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Edit Movie Title",
+			"id": "431711ce-9136-422e-9ad5-725e844c0e43",
+			"url": "http://localhost:3000/movies/4",
+			"time": "2019-07-02T15:41:53.765Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Get Movie",
+			"id": "0096e35c-a643-4e81-8afd-10f1076c589c",
+			"url": "http://localhost:3000/movies/4",
+			"time": "2019-07-02T15:41:53.765Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Movie Title is Equal to Fight Club": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Movie Genre is Equal to Drama": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "Delete Movie",
+			"id": "f62616e7-f7f5-4b0c-a690-097a82d10edb",
+			"url": "http://localhost:3000/movies/4",
+			"time": "2019-07-02T15:41:53.765Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status Code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
